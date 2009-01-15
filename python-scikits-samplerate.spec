@@ -15,6 +15,7 @@ Url:		http://www.ar.media.kyoto-u.ac.jp/members/david/softwares/pysamplerate/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires:	libsamplerate0
 BuildRequires:	python-devel, python-numpy, libsamplerate-devel
+BuildRequires:	python-setuptools
 # Package is not noarch because code loads libs differently on x86_64
 
 %description 
