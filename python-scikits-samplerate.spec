@@ -1,6 +1,6 @@
 %define tarname	scikits.samplerate
 %define name	python-scikits-samplerate
-%define version	0.3.2
+%define version	0.3.3
 %define release	%mkrel 1
 
 Summary:	Python wrapper for libsamplerate
