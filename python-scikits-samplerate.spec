@@ -1,7 +1,7 @@
 %define tarname	scikits.samplerate
 %define name	python-scikits-samplerate
 %define version	0.3.3
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Summary:	Python wrapper for libsamplerate
 Name:		%{name}
@@ -13,7 +13,6 @@ License:	BSD-like
 Group:		Development/Python
 Url:		http://www.ar.media.kyoto-u.ac.jp/members/david/softwares/pysamplerate/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Requires:	libsamplerate0
 BuildRequires:	python-numpy >= 1.2.0, python-numpy-devel >= 1.2.0, libsamplerate-devel
 BuildRequires:	python-setuptools
 %py_requires -d
