@@ -1,13 +1,13 @@
 %define tarname	scikits.samplerate
 %define name	python-scikits-samplerate
 %define version	0.3.3
-%define release	%mkrel 2
+%define release	%mkrel 4
 
 Summary:	Python wrapper for libsamplerate
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-Source0:	%{tarname}-%{version}.tar.gz
+Source0:        http://pypi.python.org/packages/source/s/%{tarname}/%{tarname}-%{version}.tar.gz
 Source1:	site.cfg
 License:	BSD-like
 Group:		Development/Python
@@ -29,11 +29,11 @@ Matlab. It is intended to be used with numpy arrays.
 %__cp %SOURCE1 .
 
 %build
-%__python setup.py build
+PYTHONDONTWRITEBYTECODE= %__python setup.py build
 
 %install
 %__rm -rf %{buildroot}
-%__python setup.py install --root=%{buildroot} --record=FILELIST
+PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record=FILELIST
 
 %clean
 %__rm -rf %{buildroot}
