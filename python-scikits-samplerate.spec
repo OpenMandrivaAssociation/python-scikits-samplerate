@@ -11,7 +11,7 @@ Source0:        http://pypi.python.org/packages/source/s/%{tarname}/%{tarname}-%
 Source1:	site.cfg
 License:	BSD-like
 Group:		Development/Python
-Url:		http://www.ar.media.kyoto-u.ac.jp/members/david/softwares/pysamplerate/
+Url:		https://www.ar.media.kyoto-u.ac.jp/members/david/softwares/pysamplerate/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	python-numpy >= 1.2.0, python-numpy-devel >= 1.2.0, libsamplerate-devel
 BuildRequires:	python-setuptools
